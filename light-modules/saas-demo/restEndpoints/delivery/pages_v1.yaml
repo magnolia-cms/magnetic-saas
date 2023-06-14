@@ -6,7 +6,10 @@ references:
       propertyName: image
       referenceResolver:
           $type: assetReferenceResolver
-    - name: pageLinkReference
+    - name: pageReference
       propertyName: pageLink
       referenceResolver:
           $type: norsuReferenceResolver
+        targetWorkspace: website
+        expand: true
+        generateLink: true
