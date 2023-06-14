@@ -1,0 +1,40 @@
+label: CTA
+$type: compositeField
+itemProvider:
+  $type: jcrChildNodeProvider
+properties:
+  link:
+    label: ''
+    $type: switchableField
+    field:
+      $type: radioButtonGroupField
+      layout: horizontal
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: pageLink
+            label: Page Link
+            value: pageLink
+          - name: postLink
+            label: Post Link
+            value: postLink
+    itemProvider:
+      $type: jcrChildNodeProvider
+    forms:
+      - name: pageLink
+        properties:
+          pageLink:
+            label: ''
+            $type: pageLinkField
+      - name: postLink
+        properties:
+          postLink:
+            label: ''
+            $type: linkField
+            datasource:
+              $type: jcrDatasource
+              workspace: stories
+  label:
+    label: Label
+    $type: textField
+    i18n: true

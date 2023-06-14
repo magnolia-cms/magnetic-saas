@@ -1,0 +1,8 @@
+$type: pagesDeliveryEndpoint_v2
+referenceDepth: 1
+
+references:
+    - name: imageReference
+      propertyName: image
+      referenceResolver:
+          $type: assetReferenceResolver

@@ -1,0 +1,2 @@
+As a best practice, place YAML files here that do not represent full definitions, but are included by the definition files. 
+This prevents the problem where Magnolia tries to interpret an include file as a definition and ends up reporting that the file has problems.

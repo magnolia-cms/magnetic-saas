@@ -1,0 +1,19 @@
+label: Map
+form:
+    properties:
+        lat:
+            label: Latitude
+            $type: textField
+            i18n: true
+        lng:
+            label: Longitude
+            $type: textField
+            i18n: true
+        zoom:
+            label: Zoom
+            $type: textField
+            i18n: true
+        infoWindow:
+            label: Info Window
+            $type: richTextField
+            i18n: true

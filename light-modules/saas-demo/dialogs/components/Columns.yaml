@@ -1,0 +1,19 @@
+label: Columns
+form:
+  properties:
+    showCol1:
+      $type: checkBoxField
+      label: ''
+      buttonLabel: Select to display Column 1
+    showCol2:
+      $type: checkBoxField
+      label: ''
+      buttonLabel: Select to display Column 2
+    showCol3:
+      $type: checkBoxField
+      label: ''
+      buttonLabel: Select to display Column 3
+    showCol4:
+      $type: checkBoxField
+      label: ''
+      buttonLabel: Select to display Column 4

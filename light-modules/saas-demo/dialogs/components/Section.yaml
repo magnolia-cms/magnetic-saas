@@ -1,0 +1,26 @@
+label: Text And Image
+form:
+    properties:
+        supTitle:
+            label: Subtitle
+            $type: textField
+            i18n: true
+        title:
+            label: Title
+            $type: textField
+            i18n: true
+        text:
+            label: Text
+            $type: textField
+            i18n: true
+        image:
+            label: Image
+            $type: damLinkField
+        fullWidth:
+            label: ''
+            $type: checkBoxField
+            buttonLabel: Stretch section to full page width
+        gradient:
+            label: ''
+            $type: checkBoxField
+            buttonLabel: Use white color as background

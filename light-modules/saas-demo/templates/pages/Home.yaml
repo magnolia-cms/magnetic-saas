@@ -1,0 +1,20 @@
+baseUrl: http://localhost:3000
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+dialog: saas-demo:pages/Home
+renderType: spa
+routeTemplate: '/{{@path}}'
+# routeTemplate: '/api/preview?slug=/{}{{@path}}'
+
+title: Saas Demo - Home
+areas:
+    header:
+        title: Header Area
+        dialog: saas-demo:components/Header
+        availableComponents:
+            pageLink:
+                id: saas-demo:components/Link
+    main:
+        title: Main Area
+        availableComponents:
+            section:
+                id: saas-demo:components/Section

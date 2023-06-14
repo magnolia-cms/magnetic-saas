@@ -1,0 +1,11 @@
+label: Text Image
+form:
+    $type: tabbedForm
+    tabs:
+        firstTab:
+            label: Main
+            fields: !include:/saas-demo/dialogs/includes/titleTextImage.yaml
+                imageLeft:
+                    label: ''
+                    $type: checkBoxField
+                    buttonLabel: Show image on the left and text on the right

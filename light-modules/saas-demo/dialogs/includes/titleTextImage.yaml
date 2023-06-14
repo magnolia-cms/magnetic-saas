@@ -1,0 +1,15 @@
+supTitle:
+    label: Subtitle
+    $type: textField
+    i18n: true
+title:
+    label: Title
+    $type: textField
+    i18n: true
+text:
+    label: Text
+    $type: richTextField
+    i18n: true
+image:
+    label: Image
+    $type: damLinkField

@@ -1,0 +1,18 @@
+title: Section
+dialog: saas-demo:components/Section
+areas:
+    section:
+        title: Section Area
+        availableComponents:
+            carousel:
+                id: saas-demo:components/Carousel
+            textImage:
+                id: saas-demo:components/TextImage
+            columns:
+                id: saas-demo:components/Columns
+            card:
+                id: saas-demo:components/Card
+            quote:
+                id: saas-demo:components/Quote
+            map:
+                id: saas-demo:components/Map

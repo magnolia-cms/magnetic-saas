@@ -1,0 +1,7 @@
+title: Carousel
+areas:
+    items:
+        title: Items Area
+        availableComponents:
+            banner:
+                id: saas-demo:components/Banner

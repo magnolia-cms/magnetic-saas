@@ -1,0 +1,22 @@
+title: Columns
+dialog: saas-demo:components/Columns
+areas:
+    col1: &col
+        title: Column 1
+        availableComponents:
+            card:
+                id: saas-demo:components/Card
+            carousel:
+                id: saas-demo:components/Carousel
+            textImage:
+                id: saas-demo:components/TextImage
+
+    col2:
+        <<: *col
+        title: Column 2
+    col3:
+        <<: *col
+        title: Column 3
+    col4:
+        <<: *col
+        title: Column 4

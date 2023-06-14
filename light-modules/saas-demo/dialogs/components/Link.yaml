@@ -1,0 +1,9 @@
+label: Page Link
+form:
+    properties:
+        pageLink:
+            label: Page Link
+            $type: textField
+        label:
+            label: Label
+            $type: textField

@@ -1,0 +1,11 @@
+label: Page
+form:
+    properties:
+        - name: title
+          label: Title
+          $type: textField
+          i18n: true
+        - name: description
+          label: Description
+          $type: textArea
+          i18n: true
