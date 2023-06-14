@@ -6,3 +6,7 @@ references:
       propertyName: image
       referenceResolver:
           $type: assetReferenceResolver
+    - name: pageLinkReference
+      propertyName: pageLink
+      referenceResolver:
+          $type: pageReferenceResolver
