@@ -10,6 +10,6 @@ references:
       propertyName: pageLink
       referenceResolver:
           $type: norsuReferenceResolver
-        targetWorkspace: website
-        expand: true
-        generateLink: true
+          targetWorkspace: website
+          expand: true
+          generateLink: true
