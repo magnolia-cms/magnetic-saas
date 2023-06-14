@@ -9,4 +9,4 @@ references:
     - name: pageLinkReference
       propertyName: pageLink
       referenceResolver:
-          $type: assetReferenceResolver
+          $type: norsuReferenceResolver
