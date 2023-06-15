@@ -16,3 +16,9 @@ form:
         image:
             label: Image
             $type: damLinkField
+        pageLink:
+            label: Link
+            $type: pageNorsuLinkField
+        ctaTitle:
+            label: Title
+            $type: textField
