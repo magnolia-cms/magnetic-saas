@@ -9,3 +9,7 @@ form:
                     label: ''
                     $type: checkBoxField
                     buttonLabel: Show image on the left and text on the right
+        secondTab:
+            label: CTA
+            fields:
+                cta: !include:/insurance-demo-lm/dialogs/includes/cta.yaml
