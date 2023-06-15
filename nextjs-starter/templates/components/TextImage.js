@@ -1,7 +1,7 @@
 import Img from '../../components/Img';
 import CTA from '../../components/CTA';
 
-function renderText(supTitle, title, text, cta) {
+function renderText(supTitle, title, text, pageLink, ctaTitle) {
 	return supTitle || title || text || cta ? (
 		<div className="col-6 TextImage__text">
 			{supTitle && <div className="supTitle">{supTitle}</div>}
@@ -12,7 +12,7 @@ function renderText(supTitle, title, text, cta) {
 					dangerouslySetInnerHTML={{ __html: text }}
 				/>
 			)}
-			<CTA className="btn-blue" cta={cta} />
+			<CTA pageLink={pageLink} ctaTitle={ctaTitle} />
 		</div>
 	) : null;
 }
@@ -30,7 +30,8 @@ function renderImage(image) {
 }
 
 function TextImage(props) {
-	const { supTitle, title, text, image, cta, imageLeft } = props;
+	const { supTitle, title, text, image, pageLink, ctaTitle, imageLeft } =
+		props;
 
 	return (
 		<div className="TextImage">
@@ -38,11 +39,11 @@ function TextImage(props) {
 				{imageLeft ? (
 					<>
 						{renderImage(image)}
-						{renderText(supTitle, title, text, cta)}
+						{renderText(supTitle, title, text, pageLink, ctaTitle)}
 					</>
 				) : (
 					<>
-						{renderText(supTitle, title, text, cta)}
+						{renderText(supTitle, title, text, pageLink, ctaTitle)}
 						{renderImage(image)}
 					</>
 				)}

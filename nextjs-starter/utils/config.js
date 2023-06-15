@@ -13,7 +13,6 @@ import Link from '../templates/components/Link';
 export const config = {
 	componentMappings: {
 		'saas-demo:pages/Home': Home,
-		'saas-demo:pages/Test': Home,
 		'saas-demo:pages/Basic': Basic,
 
 		'saas-demo:components/Section': Section,

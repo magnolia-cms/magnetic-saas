@@ -91,6 +91,10 @@ img {
 	color: #fff;
 }
 
+.Banner .title {
+	font-size: 5rem;
+}
+
 [class*='btn']:hover img {
 	filter: brightness(0) invert(1);
 }
@@ -139,13 +143,38 @@ form button {
 
 /* header */
 header {
-	padding: 2rem;
-	background: #fff;
+	padding: 4rem 2rem;
 	text-align: center;
 }
 
 nav {
-	display: none;
+	text-align: center;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-links li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.nav-links li a {
+	color: #daa520;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+	text-decoration: underline;
+	color: #ffcc00;
+}
+
+nav {
+	/* display: none; */
 }
 
 nav.show {
@@ -174,6 +203,12 @@ nav > * {
 	align-items: center;
 	gap: 0.5rem;
 	padding-top: 1rem;
+}
+
+header .PageLink {
+	color: #daa520;
+	font-size: 24px;
+	font-weight: unset;
 }
 
 .lang-select {
@@ -208,10 +243,7 @@ main {
 	margin: 0 auto;
 }
 
-.Portal .supTitle,
-.Banner .supTitle,
-.Banner .title,
-.Banner .text {
+.Portal .supTitle {
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -267,7 +299,6 @@ main {
 
 .PageLink:hover {
 	color: #d9d9d9;
-	border-bottom: 4px solid;
 }
 
 .PageLink--button {
@@ -353,8 +384,6 @@ main {
 
 /* Banner */
 .Banner {
-	border-bottom-right-radius: 2rem;
-	border-bottom-left-radius: 2rem;
 	overflow: hidden;
 	max-width: 1920px;
 	margin: auto;
@@ -386,6 +415,29 @@ main {
 	color: #fff;
 }
 
+.cta-button {
+	background-color: #daa520;
+	color: #ffffff;
+	padding: 13px 50px;
+	font-size: 22px;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #ffcc00; /* Change color on hover */
+}
+
+/* Additional styles you can customize */
+.cta-button:focus {
+	outline: none; /* Remove focus outline */
+}
+
+.cta-button:active {
+	transform: translateY(1px); /* Add subtle button press effect */
+}
+
 /* TextImage  */
 .TextImage {
 	padding: 4rem 1rem;
@@ -398,6 +450,7 @@ main {
 .TextImage .title {
 	padding-right: 2rem;
 	color: goldenrod;
+	font-family: 'Helvetica, Arial, Calibri', sans-serif;
 }
 
 .TextImage .supTitle {
