@@ -1,7 +1,7 @@
 label: Header
 form:
     properties:
-        logo:
+        image:
             label: Logo
             $type: damLinkField
         pageLink:
