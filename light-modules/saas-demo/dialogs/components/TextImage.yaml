@@ -12,7 +12,7 @@ form:
         secondTab:
             label: CTA
             fields:
-                ctaLink:
+                link:
                     label: Link
                     $type: pageNorsuLinkField
                 ctaTitle:
