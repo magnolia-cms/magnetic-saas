@@ -15,3 +15,6 @@ form:
                 link:
                     label: Link
                     $type: pageNorsuLinkField
+                title:
+                    label: Title
+                    $type: textField
