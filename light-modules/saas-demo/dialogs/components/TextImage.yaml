@@ -11,3 +11,7 @@ form:
                     buttonLabel: Show image on the left and text on the right
         secondTab:
             label: CTA
+            fields:
+                link:
+                    label: Link
+                    $type: pageNorsuLinkField
