@@ -15,6 +15,6 @@ form:
                 link:
                     label: Link
                     $type: pageNorsuLinkField
-                title:
+                ctatitle:
                     label: Title
                     $type: textField
