@@ -1,9 +1,6 @@
-label: CTA
-form:
-    properties:
-        link:
-            label: CTA Link
-            $type: pageNorsuLinkField
-        label:
-            label: Label
-            $type: textField
+title:
+    label: Title
+    $type: textField
+link:
+    label: Link
+    $type: pageNorsuLinkField
