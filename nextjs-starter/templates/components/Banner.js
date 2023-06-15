@@ -7,7 +7,7 @@ function Banner(props) {
 	return (
 		<div className="Banner">
 			<Img className="Banner__image" image={image} />
-			<div className="Banner__imageMask">
+			<div>
 				<div className="Banner__info">
 					{supTitle && <div className="supTitle">{supTitle}</div>}
 					{title && <div className="title">{title}</div>}

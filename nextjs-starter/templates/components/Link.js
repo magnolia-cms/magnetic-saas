@@ -7,7 +7,7 @@ function PageLink(props) {
 	return currentLabel ? (
 		<A
 			className={'PageLink' + (isButton ? ' PageLink--button' : '')}
-			href={pageLink}
+			href={pageLink['@path']}
 			label={currentLabel}
 		/>
 	) : null;
