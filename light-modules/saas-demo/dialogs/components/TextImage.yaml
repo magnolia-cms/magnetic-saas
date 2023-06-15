@@ -11,10 +11,3 @@ form:
                     buttonLabel: Show image on the left and text on the right
         secondTab:
             label: CTA
-            fields:
-                title:
-                    label: Title
-                    $type: textField
-                link:
-                    label: Link
-                    $type: pageNorsuLinkField
