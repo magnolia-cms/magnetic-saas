@@ -10,6 +10,11 @@ form:
                     $type: checkBoxField
                     buttonLabel: Show image on the left and text on the right
         secondTab:
-            label: Main
+            label: CTA
             fields:
-                cta: !include:/saas-demo/dialogs/includes/cta.yaml
+                title:
+                    label: Title
+                    $type: textField
+                link:
+                    label: Link
+                    $type: pageNorsuLinkField
