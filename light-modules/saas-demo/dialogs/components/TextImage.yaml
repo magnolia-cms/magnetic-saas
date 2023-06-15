@@ -12,5 +12,4 @@ form:
         secondTab:
             label: Main
             fields:
-                cta:
-                    $type: textField
+                cta: !include:/saas-demo/dialogs/includes/cta.yaml
