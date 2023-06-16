@@ -1,5 +1,11 @@
 @import url('https://use.typekit.net/cvt6jwa.css');
 
+:root {
+	--background-color: #121212;
+	--primary-font-color: #daa520;
+	--hover-font-color: #ffcc00;
+}
+
 * {
 	position: relative;
 	box-sizing: border-box;
@@ -9,7 +15,7 @@
 
 body {
 	font: 14px/1.4 'degular', sans-serif;
-	background: #121212;
+	background: var(--background-color);
 	transform: scale(0.75);
 	transform-origin: top left;
 	width: calc(1 / 0.75 * 100%);
@@ -147,6 +153,13 @@ header {
 	text-align: center;
 }
 
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
 nav {
 	text-align: center;
 }
@@ -163,14 +176,14 @@ nav {
 }
 
 .nav-links li a {
-	color: #daa520;
+	color: var(--primary-font-color);
 	text-decoration: none;
 	padding: 5px 10px;
 }
 
 .nav-links li a:hover {
 	text-decoration: underline;
-	color: #ffcc00;
+	color: var(--hover-font-color);
 }
 
 nav {
@@ -206,7 +219,7 @@ nav > * {
 }
 
 header .PageLink {
-	color: #daa520;
+	color: var(--primary-font-color);
 	font-size: 24px;
 	font-weight: unset;
 }
@@ -231,7 +244,7 @@ main {
 /* logo */
 .logo img {
 	width: auto;
-	height: 3rem;
+	height: 8rem;
 }
 
 /* Shared */
@@ -1048,6 +1061,31 @@ a.Card-wrapper:hover .btn-blue {
 
 .Form__option.checked {
 	background: #ddd;
+}
+
+footer {
+	background-color: var(--primary-background-color);
+	padding: 400px 100px 60px 100px;
+}
+
+.footer-columns {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer-column {
+	flex-basis: 30%;
+}
+
+.footer-column h3 {
+	color: var(--hover-font-color);
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.footer-column p {
+	color: var(--hover-font-color);
+	font-size: 24px;
 }
 
 /* STORY */
