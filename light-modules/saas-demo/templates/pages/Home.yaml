@@ -2,8 +2,8 @@ baseUrl: http://localhost:3000
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 dialog: saas-demo:pages/Home
 renderType: spa
-routeTemplate: '/{{@path}}'
-# routeTemplate: '/api/preview?slug=/{}{{@path}}'
+# routeTemplate: '/{{@path}}'
+routeTemplate: '/api/preview?slug=/{{@path}}'
 
 title: Magnetic - Home
 areas:
