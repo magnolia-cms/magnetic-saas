@@ -5,7 +5,7 @@ renderType: spa
 routeTemplate: '/{{@path}}'
 # routeTemplate: '/api/preview?slug=/{}{{@path}}'
 
-title: Saas Demo - Home
+title: Magnetic - Home
 areas:
     header:
         title: Header Area
