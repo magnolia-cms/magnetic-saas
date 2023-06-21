@@ -1,6 +1,7 @@
 import { EditableArea, EditableComponent } from '@magnolia/react-editor';
 import { useLayoutEffect, useState } from 'react';
 import { renderHomeHeader } from './Home';
+import Footer from '../components/Footer';
 
 function Basic(props) {
 	const { title, description, main } = props;
@@ -22,6 +23,7 @@ function Basic(props) {
 				<EditableArea content={header} customView={renderHomeHeader} />
 			)}
 			{main && <EditableArea content={main} />}
+			<Footer />
 		</div>
 	);
 }

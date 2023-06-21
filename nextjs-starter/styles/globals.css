@@ -1083,7 +1083,8 @@ footer {
 	margin-bottom: 10px;
 }
 
-.footer-column p {
+.footer-column p,
+.footer-column a {
 	color: var(--hover-font-color);
 	font-size: 24px;
 }
