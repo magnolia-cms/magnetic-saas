@@ -28,6 +28,8 @@ export async function getStaticProps(context) {
 		? '/' + context.params.pathname.join('/')
 		: '';
 
+	const isPagesApp = !!context.previewData || null;
+
 	/*
 		Use the EditorContextHelper to get the correct path when the
 		path is / this will resolve to /magnetic on the nodePath property
@@ -53,10 +55,12 @@ export async function getStaticProps(context) {
 	/*
 		This code should be behide a conditional that checks if the user is in page edit mode
 	*/
-	const templatesUrl = getTemplatesUrl(magnoliaContext.nodePath);
-	const templateAnnotationsRes = await fetch(templatesUrl);
-	templateAnnotationsJson = await templateAnnotationsRes.json();
-	props.templateAnnotations = templateAnnotationsJson;
+	if (isPagesApp) {
+		const templatesUrl = getTemplatesUrl(magnoliaContext.nodePath);
+		const templateAnnotationsRes = await fetch(templatesUrl);
+		templateAnnotationsJson = await templateAnnotationsRes.json();
+		props.templateAnnotations = templateAnnotationsJson;
+	}
 
 	// Required by @magnolia/react-editor
 	global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
