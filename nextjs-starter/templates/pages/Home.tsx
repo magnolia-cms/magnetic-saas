@@ -11,8 +11,6 @@ export function renderHomeHeader(props: any) {
 	const { content } = props;
 	const { image } = content;
 
-	console.log(props);
-
 	return (
 		<header>
 			<div className="header">

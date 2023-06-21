@@ -3,14 +3,35 @@ import { config } from '../utils/config';
 
 import {
 	spaRootNodePath,
-	pagesApi,
-	templateAnnotationsApi,
+	pagesNavApi,
 	getPageUrl,
 	getTemplatesUrl,
 } from '../utils/api';
 
-export async function getServerSideProps(context) {
-	const resolvedUrl = context.resolvedUrl;
+export async function getStaticPaths() {
+	const res = await fetch(pagesNavApi);
+	const pages = await res.json();
+
+	const paths = pages.results.map((page) => page['@metadata']['@path']);
+	paths.push('/');
+
+	return {
+		paths,
+		fallback: false,
+	};
+}
+
+export async function getStaticProps(context) {
+	const resolvedUrl = context.preview
+		? context.previewData.query.slug
+		: context.params.pathname
+		? '/' + context.params.pathname.join('/')
+		: '';
+
+	/*
+		Use the EditorContextHelper to get the correct path when the
+		path is / this will resolve to /magnetic on the nodePath property
+	*/
 	const magnoliaContext = EditorContextHelper.getMagnoliaContext(
 		resolvedUrl,
 		spaRootNodePath
@@ -23,31 +44,22 @@ export async function getServerSideProps(context) {
 	const pageUrl = getPageUrl(magnoliaContext.nodePath);
 	const pagesRes = await fetch(pageUrl);
 
-	console.log('I am here', pageUrl);
-
 	pageJson = await pagesRes.json();
 
 	if (!pageJson.error) props.page = pageJson;
 
 	let templateAnnotationsJson;
 
-	if (magnoliaContext.isMagnolia) {
-		const templatesUrl = getTemplatesUrl(magnoliaContext.nodePath);
-		const templateAnnotationsRes = await fetch(templatesUrl);
-		templateAnnotationsJson = await templateAnnotationsRes.json();
-		props.templateAnnotations = templateAnnotationsJson;
-		console.log('TEmp, templatesUrl', templatesUrl);
-	}
-
-	props.urls = {
-		pagesApi,
-		templateAnnotationsApi,
-	};
+	/*
+		This code should be behide a conditional that checks if the user is in page edit mode
+	*/
+	const templatesUrl = getTemplatesUrl(magnoliaContext.nodePath);
+	const templateAnnotationsRes = await fetch(templatesUrl);
+	templateAnnotationsJson = await templateAnnotationsRes.json();
+	props.templateAnnotations = templateAnnotationsJson;
 
 	// Required by @magnolia/react-editor
 	global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
-
-	// console.log('I am here', pageUrl);
 
 	return { props };
 }
@@ -64,3 +76,5 @@ export default function Pathname(props) {
 		/>
 	);
 }
+
+//http://localhost:3000/api/preview?slug=/magnetic&mgnlPreview=false&mgnlChannel=desktop
