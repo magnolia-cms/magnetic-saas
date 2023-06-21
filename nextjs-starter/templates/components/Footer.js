@@ -26,7 +26,18 @@ const Footer = () => {
 				</div>
 				<div className="footer-column">
 					<h3>Links</h3>
-					<p>Content for column 1</p>
+					<p>
+						<a href="#">Help</a>
+					</p>
+					<p>
+						<a href="#">Sustainability</a>
+					</p>
+					<p>
+						<a href="#">Eco</a>
+					</p>
+					<p>
+						<a href="#">Charity</a>
+					</p>
 				</div>
 			</div>
 		</footer>
