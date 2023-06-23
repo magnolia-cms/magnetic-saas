@@ -7,5 +7,5 @@ form:
           i18n: true
         - name: description
           label: Description
-          $type: textArea
+          $type: richTextField
           i18n: true
