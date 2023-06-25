@@ -10,6 +10,8 @@ areas:
                 id: saas-demo:components/Carousel
             textImage:
                 id: saas-demo:components/TextImage
+            watch:
+                id: saas-demo:components/Watch
 
     col2:
         <<: *col
