@@ -1,0 +1,12 @@
+$type: deliveryEndpoint_v2
+workspace: watches
+depth: 2
+includeSystemProperties: true
+limit: 50
+
+referenceDepth: 2
+references:
+    - name: imageReference
+      propertyName: image
+      referenceResolver:
+        $type: assetReferenceResolver

@@ -17,3 +17,10 @@ references:
           targetWorkspace: website
           expand: true
           generateLink: true
+    - name: watchReference
+      propertyName: watchLink
+      referenceResolver:
+          $type: norsuReferenceResolver
+          targetWorkspace: watches
+          expand: true
+          generateLink: true
