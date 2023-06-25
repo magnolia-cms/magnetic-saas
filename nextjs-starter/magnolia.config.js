@@ -10,6 +10,7 @@ import Quote from "./templates/components/Quote";
 import Map from "./templates/components/Map";
 import Link from "./templates/components/Link";
 import ContactForm from "./templates/components/ContactForm";
+import Watch from "./templates/components/Watch";
 
 export const config = {
   componentMappings: {
@@ -26,5 +27,6 @@ export const config = {
     "saas-demo:components/Map": Map,
     "saas-demo:components/Link": Link,
     "saas-demo:components/ContactForm": ContactForm,
+    "saas-demo:components/Watch": Watch,
   },
 };
