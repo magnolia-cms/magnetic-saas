@@ -1,15 +1,17 @@
 $type: pagesDeliveryEndpoint_v2
-referenceDepth: 1
+referenceDepth: 2
 
 references:
     - name: imageReference
       propertyName: image
       referenceResolver:
           $type: assetReferenceResolver
+
     - name: logoReference
       propertyName: logo
       referenceResolver:
           $type: assetReferenceResolver
+
     - name: pageReference
       propertyName: pageLink
       referenceResolver:
@@ -17,6 +19,7 @@ references:
           targetWorkspace: website
           expand: true
           generateLink: true
+
     - name: watchReference
       propertyName: watchLink
       referenceResolver:
