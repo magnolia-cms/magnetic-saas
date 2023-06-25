@@ -1,0 +1,11 @@
+label: Contact Form
+form:
+    properties:
+        title:
+            label: Title
+            $type: textField
+            i18n: true
+        buttonText:
+            label: Button Text
+            $type: textField
+            i18n: true

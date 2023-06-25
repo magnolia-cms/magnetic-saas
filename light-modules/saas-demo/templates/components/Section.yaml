@@ -16,3 +16,5 @@ areas:
                 id: saas-demo:components/Quote
             map:
                 id: saas-demo:components/Map
+            contactForm:
+                id: saas-demo:components/ContactForm

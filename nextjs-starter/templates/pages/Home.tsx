@@ -12,7 +12,7 @@ export function renderHomeHeader(props: any) {
 	const { image } = content;
 
 	return (
-		<header>
+		<header className="flex">
 			<div className="header">
 				{image && (
 					<a className="logo" href="/">

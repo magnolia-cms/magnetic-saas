@@ -1,11 +1,15 @@
-import A from './A';
+import A from "./A";
 
 function CTA(props) {
-	const { ctaTitle, pageLink } = props;
+  const { ctaTitle, pageLink, webLink } = props;
 
-	return ctaTitle ? (
-		<A className="cta-button" href={pageLink['@path']} label={ctaTitle} />
-	) : null;
+  return ctaTitle && (pageLink || webLink) ? (
+    <A
+      className="btn-blue"
+      href={pageLink ? pageLink["@path"] : webLink}
+      label={ctaTitle}
+    />
+  ) : null;
 }
 
 export default CTA;
