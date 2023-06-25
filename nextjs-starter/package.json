@@ -3,7 +3,10 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
+		"get-env": "node get-env.js",
+    	"get-env-netlify": "node get-env-netlify.js",
+
+		"dev": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -16,9 +19,15 @@
 		"@types/react-dom": "18.2.4",
 		"eslint": "8.40.0",
 		"eslint-config-next": "13.4.1",
-		"next": "^12.3.4",
+		"next": "13.4.7",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"typescript": "5.0.4"
+		"typescript": "5.0.4",
+		"current-git-branch": "^1.1.0"
+
+	},
+	"devDependencies": {
+		
+		"env-cmd": "^10.0.1"
 	}
 }

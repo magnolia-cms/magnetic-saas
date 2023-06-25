@@ -1,47 +1,68 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-	return (
-		<footer>
-			<div className="footer-columns">
-				<div className="footer-column">
-					<h3>Address</h3>
-					<p>
-						Emmi UK Limited 111 Upper Richmond Road Putney London
-						SW15 2TJ Great Britain
-					</p>
-				</div>
-				<div className="footer-column">
-					<h3>About us</h3>
-					<p>
-						Emmi is a major Swiss milk processor. In Switzerland,
-						the Emmi Group has 25 production sites. Abroad, Emmi and
-						its subsidiaries have a presence in 14 countries, eight
-						of which have production facilities. Half of its around
-						CHF 3.5 billion in sales – over 10 % of which stems from
-						organic products – is generated in Switzerland, the
-						other half abroad. Two-thirds of its more than 8,000
-						employees are currently based outside of Switzerland.
-					</p>
-				</div>
-				<div className="footer-column">
-					<h3>Links</h3>
-					<p>
-						<a href="#">Help</a>
-					</p>
-					<p>
-						<a href="#">Sustainability</a>
-					</p>
-					<p>
-						<a href="#">Eco</a>
-					</p>
-					<p>
-						<a href="#">Charity</a>
-					</p>
-				</div>
-			</div>
-		</footer>
-	);
+  return (
+    <footer>
+      <section className="Section">
+        <div className="row footer">
+          <div className="footer-column col-4">
+            <h3>Quicklinks</h3>
+            <p>
+              <a href="/">Home</a>
+            </p>
+            <p>
+              <a href="#">Contact</a>
+            </p>
+            <p>
+              <a href="#">Terms and Conditions</a>
+            </p>
+            <p>
+              <a href="#">Privacy</a>
+            </p>
+            <p>
+              <a href="#">Store Finder</a>
+            </p>
+            <p>
+              <a href="#">Media</a>
+            </p>
+          </div>
+
+          <div className="footer-column col-4">
+            <h3>Address</h3>
+            <p>
+              Magnetic Group Inc. <br />
+              St. Johanns-Vorstadt 42
+              <br />
+              Basel 4056
+              <br />
+              Switzerland
+            </p>
+          </div>
+
+          <div className="footer-column col-4">
+            <h3>About us</h3>
+            <p>
+              Unique watches for unique people
+              <br />
+              Creating unique timepieces is our passion. Our purpose also
+              expresses this. Together with our vision and values, it guides our
+              actions – today and in the future.
+            </p>
+          </div>
+        </div>
+
+        <div className="row footer">
+          <div className="footer-column col-4">
+            <br />
+            <br />
+            © Magnetic Group
+            <br />
+            <br />
+          </div>
+        </div>
+      </section>
+    </footer>
+  );
 };
 
 export default Footer;
