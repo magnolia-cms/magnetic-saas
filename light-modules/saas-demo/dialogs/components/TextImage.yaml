@@ -13,8 +13,12 @@ form:
             label: CTA
             fields:
                 pageLink:
-                    label: Link
+                    label: Page Link
                     $type: pageNorsuLinkField
+                webLink:
+                    label: or Full URL
+                    description: Provide a full internet URL.
+                    $type: textField
                 ctaTitle:
                     label: Title
                     $type: textField
