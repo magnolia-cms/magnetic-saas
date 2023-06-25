@@ -1,0 +1,21 @@
+label: Watch
+form:
+  properties:
+  
+      watchLink:
+          label: Watch Link
+          $type: linkField
+          datasource:
+            $type: contentDatasource
+            workspace: watches
+
+      title:
+          label: Title Override
+          $type: textField
+          i18n: true
+          
+      transparentBg:
+          label: ''
+          $type: checkBoxField
+          buttonLabel: Transparent background
+

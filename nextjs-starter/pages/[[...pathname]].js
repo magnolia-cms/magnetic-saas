@@ -52,6 +52,10 @@ export async function getStaticProps(context) {
 
   pageJson = await pagesRes.json();
 
+  console.log("----------------");
+  console.log("pageJson:", pageJson);
+  console.log("----------------");
+
   if (!pageJson.error) props.page = pageJson;
 
   let templateAnnotationsJson;

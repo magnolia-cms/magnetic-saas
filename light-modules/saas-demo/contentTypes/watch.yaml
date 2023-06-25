@@ -1,0 +1,33 @@
+datasource:
+  $type: contentTypeDatasource
+  workspace: watches
+  autoCreate: true
+
+model:
+  nodeType: watch
+  properties:
+
+    name:
+      label: Name
+      required: true
+
+    tagLine:
+      label: Tag Line
+
+    price:
+      label: Price
+
+    image:
+      label: Primary Image
+      type: Asset
+
+    description:
+      type: richText
+      label: Description
+
+    testimonial:
+      type: richText
+      label: Testimonial
+
+
+

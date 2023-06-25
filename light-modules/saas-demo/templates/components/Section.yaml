@@ -18,3 +18,5 @@ areas:
                 id: saas-demo:components/Map
             contactForm:
                 id: saas-demo:components/ContactForm
+            watch:
+                id: saas-demo:components/Watch
