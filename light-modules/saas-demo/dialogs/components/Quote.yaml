@@ -16,3 +16,7 @@ form:
         image:
             label: Avatar
             $type: damLinkField
+        large:
+            label: ''
+            $type: checkBoxField
+            buttonLabel: Extra Large Quote
