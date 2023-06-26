@@ -17,6 +17,9 @@ function Watch(props) {
         </div>
         <div className="Card__info">
           <div className="title">{title || watchLink.name}</div>
+          {watchLink.tagLine && (
+            <div className="supTitle">{watchLink.tagLine}</div>
+          )}
         </div>
       </div>
     </div>

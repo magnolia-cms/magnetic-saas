@@ -52,9 +52,9 @@ export async function getStaticProps(context) {
 
   pageJson = await pagesRes.json();
 
-  console.log("----------------");
-  console.log("pageJson:", pageJson);
-  console.log("----------------");
+  // console.log("----------------");
+  // console.log("pageJson:", JSON.stringify(pageJson, null, " "));
+  // console.log("----------------");
 
   if (!pageJson.error) props.page = pageJson;
 
