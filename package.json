@@ -1,6 +1,6 @@
 {
-	"name": "saas-seeder",
-	"version": "0.1.0",
+	"name": "magnetic-saas-website-demo",
+	"version": "0.2.0",
 	"private": true,
 	"scripts": {
 		"get-env": "node get-env.js",
