@@ -581,6 +581,14 @@ a.Card-wrapper:hover .btn-blue {
   font-style: italic;
 }
 
+.Quote__quote__large {
+  margin: 0 auto 2rem;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: #828282;
+  font-style: italic;
+}
+
 /* Author */
 .Author {
   display: flex;
