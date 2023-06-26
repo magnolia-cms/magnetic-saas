@@ -1,6 +1,6 @@
 !content-type:watch
 name: watches-app
-label: Watches
+label: Timepieces
 
 #Optionally override any of the app configuration supplied by the content type.
 subApps:

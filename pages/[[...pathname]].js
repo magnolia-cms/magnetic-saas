@@ -9,6 +9,10 @@ import {
 } from "../utils/api";
 
 export async function getStaticPaths() {
+  console.log("----------------");
+  console.log("getStaticPaths: pagesNavApi:", pagesNavApi);
+  console.log("----------------");
+
   const res = await fetch(pagesNavApi);
   const pages = await res.json();
 
