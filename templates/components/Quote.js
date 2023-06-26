@@ -1,14 +1,14 @@
 import Img from "../../components/Img";
 
 function Quote(props) {
-  const { quote, fullName, title, image } = props;
+  const { quote, fullName, title, image, large } = props;
 
   return (
     <div className="Quote-wrapper">
       <div className="Quote">
         {quote && (
           <div
-            className="Quote__quote"
+            className={large ? "Quote__quote__large" : "Quote__quote"}
             dangerouslySetInnerHTML={{ __html: quote }}
           />
         )}
