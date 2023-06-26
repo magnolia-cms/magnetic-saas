@@ -12,7 +12,7 @@ model:
       required: true
 
     tagLine:
-      label: Tag Line
+      label: Lead
 
     price:
       label: Price
