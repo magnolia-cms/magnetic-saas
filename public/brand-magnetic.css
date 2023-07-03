@@ -1,0 +1,11 @@
+a.PageLink{
+    text-transform: lowercase;
+    border: solid 2px black;
+  }
+
+  :root {
+    --background-color: #eee;
+    --primary-font-color: #000;
+    --hover-font-color: #666;
+    --image-mask-color: #000;
+  }

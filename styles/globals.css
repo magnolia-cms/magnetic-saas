@@ -1,11 +1,11 @@
 @import url('https://use.typekit.net/cvt6jwa.css');
 
-:root {
-	--background-color: #eee;
-	--primary-font-color: #000;
-	--hover-font-color: #666;
-	--image-mask-color: #000;
-}
+/* a.PageLink{
+  text-transform: lowercase;
+} */
+
+
+
 
 * {
   position: relative;
