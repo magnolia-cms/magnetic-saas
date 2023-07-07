@@ -1,13 +1,15 @@
 {
 	"name": "magnetic-saas-website-demo",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"private": true,
 	"scripts": {
 		"get-env": "node get-env.js",
     	"get-env-netlify": "node get-env-netlify.js",
 
 		"dev": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next dev",
-		"build": "next build",
+		"build": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next build",
+		"build:netlify": "npm run get-env-netlify && CI=false && env-cmd -f .config-env env-cmd -f .env next build",
+    
 		"start": "next start",
 		"lint": "next lint"
 	},
