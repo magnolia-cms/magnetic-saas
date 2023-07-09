@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 
   // paths.push("/magnetic");
   // SHORT TEST.
-  paths = ["/magnetic"];
+  // paths = ["/magnetic"];
 
   return {
     paths,
