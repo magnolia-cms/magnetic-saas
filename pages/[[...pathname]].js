@@ -1,6 +1,8 @@
 import { EditablePage, EditorContextHelper } from "@magnolia/react-editor";
 import { config } from "../magnolia.config";
 
+import { encode } from "querystring";
+
 import {
   spaRootNodePath,
   pagesNavApi,
@@ -9,15 +11,34 @@ import {
 } from "../utils/api";
 
 export async function getStaticPaths() {
+  const navAPI = pagesNavApi();
   console.log("----------------");
-  console.log("getStaticPaths: pagesNavApi:", pagesNavApi);
+  console.log("getStaticPaths: pagesNavApi:", navAPI);
   console.log("----------------");
 
-  const res = await fetch(pagesNavApi);
+  //REWORK to work with multiple
+
+  let paths = [];
+
+  const res = await fetch(navAPI);
   const pages = await res.json();
 
-  const paths = pages.results.map((page) => page["@metadata"]["@path"]);
+  paths = pages.results.map((page) => {
+    let path = page["@metadata"]["@path"];
+
+    if (spaRootNodePath) {
+      return path.replace(spaRootNodePath, "");
+    } else {
+      return path;
+    }
+  });
   paths.push("/");
+
+  console.log("getStaticPaths:" + paths);
+
+  // paths.push("/magnetic");
+  // SHORT TEST.
+  // paths = ["/"];
 
   return {
     paths,
@@ -26,13 +47,27 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  const resolvedUrl = context.preview
-    ? context.previewData.query.slug
-    : context.params.pathname
-    ? "/" + context.params.pathname.join("/")
-    : "";
+  // console.log("context.preview:", context.preview);
+  // console.log("context.previewData:", context.previewData);
+  // console.log("context.params:", context.params);
+  // console.log("context.params.pathname:", context.params.pathname);
 
-  const isPagesApp = !!context.previewData || null;
+  // Handle both Next.JS Preview mode or normal Static rendering.
+  let resolvedUrl;
+  if (context.preview) {
+    let q = encode(context.previewData.query);
+    resolvedUrl = `${context.previewData.query.slug}?${q}`;
+  } else {
+    resolvedUrl = context.params.pathname
+      ? "/" + context.params.pathname.join("/")
+      : "";
+  }
+
+  console.log("");
+  console.log("GetStaticProps.");
+  console.log("----------------");
+  console.log("resolvedUrl:", resolvedUrl);
+  console.log("----------------");
 
   /*
 		Use the EditorContextHelper to get the correct path when the
@@ -40,14 +75,39 @@ export async function getStaticProps(context) {
 	*/
   const magnoliaContext = EditorContextHelper.getMagnoliaContext(
     resolvedUrl,
-    spaRootNodePath
+    ""
   );
+
+  console.log("magnoliaContext:", magnoliaContext);
+
+  // TODO: Ideally nodePath can be from magnoliaContext.nodePath - but that value is not correct.
+  //const nodePath = magnoliaContext.searchParams.slug;
+  let nodePath = resolvedUrl.split("?")[0];
+  // const nodePath = resolvedUrl.indexOf("?") > 0 ?
+  // if ( {
+  //   resolvedUrl = ;
+  // }
+
+  const appBase = spaRootNodePath;
+  if (appBase) {
+    //nodePath = nodePath.replace(appBase, "");
+    if (!nodePath.startsWith(appBase)) {
+      nodePath = `${appBase}${nodePath}`;
+    }
+  }
+
+  console.log("----------------");
+  console.log("nodePath:", nodePath);
+  console.log("----------------");
+  // magnoliaContext.nodePath;
 
   const props = {};
 
   let pageJson;
 
-  const pageUrl = getPageUrl(magnoliaContext.nodePath);
+  // console.log("ctx nodePath:" + magnoliaContext.nodePath);
+
+  const pageUrl = getPageUrl(nodePath);
   console.log("----------------");
   console.log("pageUrl:", pageUrl);
   console.log("----------------");
@@ -55,6 +115,18 @@ export async function getStaticProps(context) {
   const pagesRes = await fetch(pageUrl);
 
   pageJson = await pagesRes.json();
+
+  //Handle that react-editor expects "@id" property for keys.
+  function addIDProperties(obj) {
+    if (!obj || typeof obj !== "object") return;
+    if (!Array.isArray(obj)) {
+      if (obj["@name"]) {
+        obj["@id"] = obj["@name"];
+      }
+    }
+    Object.values(obj).forEach((obj) => addIDProperties(obj));
+  }
+  addIDProperties(pageJson);
 
   // console.log("----------------");
   // console.log("pageJson:", JSON.stringify(pageJson, null, " "));
@@ -65,10 +137,10 @@ export async function getStaticProps(context) {
   let templateAnnotationsJson;
 
   /*
-		This code should be behide a conditional that checks if the user is in page edit mode
+		Only get the template annotatations in page edit mode
 	*/
-  if (isPagesApp) {
-    const templatesUrl = getTemplatesUrl(magnoliaContext.nodePath);
+  if (magnoliaContext.isMagnoliaEdit) {
+    const templatesUrl = getTemplatesUrl(nodePath);
     const templateAnnotationsRes = await fetch(templatesUrl);
     templateAnnotationsJson = await templateAnnotationsRes.json();
     props.templateAnnotations = templateAnnotationsJson;

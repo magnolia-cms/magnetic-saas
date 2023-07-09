@@ -9,8 +9,7 @@
 		"dev": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next dev",
 		"build": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next build",
 		"build:netlify": "npm run get-env-netlify && CI=false && env-cmd -f .config-env env-cmd -f .env next build",
-    
-		"start": "next start",
+		"start": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next start",
 		"lint": "next lint"
 	},
 	"dependencies": {

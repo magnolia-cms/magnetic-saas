@@ -1,11 +1,11 @@
 a.PageLink{
     text-transform: lowercase;
-    border: solid 2px rgb(0, 128, 255);
+    border: solid 2px rgb(7, 62, 30);
   }
 
   :root {
 	--background-color: #003717;
 	--primary-font-color: #000;
 	--hover-font-color: #666;
-	--image-mask-color: rgb(0, 128, 255);
+	--image-mask-color: rgb(7, 62, 30);
 }

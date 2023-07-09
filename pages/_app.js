@@ -14,10 +14,16 @@ function getStyleSheetLink(siteName) {
 }
 
 function MyApp({ Component, pageProps }) {
-  // const styleSheetLink = getStyleSheetLink(process.env.HOSTNAME);
-  const styleSheetLink = getStyleSheetLink(
-    process.env.NEXT_PUBLIC_MGNL_SITE_NAME
-  );
+  // console.log("MyApp pageProps:", pageProps);
+  let siteName = "";
+
+  //pageProps can be `page` or `statusCode`.
+  if (pageProps.page && pageProps.page["@path"]) {
+    const siteNameEnv = process.env.NEXT_PUBLIC_MGNL_SITE_NAME_2;
+    siteName = siteNameEnv ?? pageProps.page["@path"].split("/")[1];
+    console.log("siteName:", siteName);
+  }
+  const styleSheetLink = getStyleSheetLink(siteName);
 
   return (
     <>

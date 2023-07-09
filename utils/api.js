@@ -6,25 +6,34 @@ const annotionsPath = process.env.NEXT_APP_MGNL_API_ANNOTATIONS;
 const subIdQueryString = process.env.NEXT_APP_MGNL_SUB_ID_STRING;
 
 const pagesApi = baseUrl + pagePath + spaRootNodePath + subIdQueryString;
-const pagesNavApi = baseUrl + pagesNavPath + subIdQueryString;
+
+const pagesNavApi = () => {
+  if (spaRootNodePath) {
+    return (
+      baseUrl + pagesNavPath + spaRootNodePath + "@nodes" + subIdQueryString
+    );
+  } else {
+    return baseUrl + pagesNavPath + subIdQueryString;
+  }
+};
 
 const templateAnnotationsApi =
-	baseUrl + annotionsPath + spaRootNodePath + subIdQueryString;
+  baseUrl + annotionsPath + spaRootNodePath + subIdQueryString;
 
 const getPageUrl = (nodePath) => {
-	return baseUrl + pagePath + nodePath + subIdQueryString;
+  return baseUrl + pagePath + nodePath + subIdQueryString;
 };
 
 const getTemplatesUrl = (nodePath) => {
-	return baseUrl + annotionsPath + nodePath + subIdQueryString;
+  return baseUrl + annotionsPath + nodePath + subIdQueryString;
 };
 
 export {
-	baseUrl,
-	spaRootNodePath,
-	pagesApi,
-	pagesNavApi,
-	templateAnnotationsApi,
-	getPageUrl,
-	getTemplatesUrl,
+  baseUrl,
+  spaRootNodePath,
+  pagesApi,
+  pagesNavApi,
+  templateAnnotationsApi,
+  getPageUrl,
+  getTemplatesUrl,
 };
