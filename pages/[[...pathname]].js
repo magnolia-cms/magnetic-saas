@@ -16,6 +16,12 @@ export async function getStaticPaths() {
   console.log("getStaticPaths: pagesNavApi:", navAPI);
   console.log("----------------");
 
+  console.log("----------------");
+  console.log("spaRootNodePath:", spaRootNodePath);
+  console.log("NEXT_APP_MGNL_APP_BASE:", process.env.NEXT_APP_MGNL_APP_BASE);
+
+  console.log("----------------");
+
   //REWORK to work with multiple
 
   let paths = [];
@@ -38,7 +44,7 @@ export async function getStaticPaths() {
 
   // paths.push("/magnetic");
   // SHORT TEST.
-  // paths = ["/"];
+  paths = ["/magnetic"];
 
   return {
     paths,
