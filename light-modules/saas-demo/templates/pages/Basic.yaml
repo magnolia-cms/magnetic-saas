@@ -2,20 +2,6 @@ title: Magnetic - Basic
 dialog: saas-demo:pages/Home
 $type: siteSpa # See "sites" definitions to see more merged-in configuration.
 
-
-
-# # baseUrl: https://magnetic-saas.netlify.app
-# baseUrl: http://localhost:3000
-
-# class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
-
-# renderType: spa
-# # # routeTemplate: '/{{@path}}'
-# routeTemplate: '/api/preview?slug=/{{@path}}'
-
-# # $type: siteSpa
-
-
 areas:
     main:
         title: Main Area

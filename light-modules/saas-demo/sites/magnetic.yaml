@@ -3,8 +3,8 @@ templates:
         baseUrl: http://localhost:3000
         # baseUrl: https://magnetic-saas.netlify.app
 
-        routeTemplate: '/api/preview?slug=/{{@sitePath}}'
-        # routeTemplate: '/{language}{{@path}}'
+        routeTemplate: '/api/preview?slug=/{{@path}}'
+        # routeTemplate: '/{{@path}}'
         $type: spaPrototype
         
 mappings:
