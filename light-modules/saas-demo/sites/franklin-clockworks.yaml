@@ -9,5 +9,5 @@ templates:
         
 mappings:
     website:
-        handlePrefix: '/rethink'
+        handlePrefix: '/franklin-clockworks'
         repository: ''

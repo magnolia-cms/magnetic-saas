@@ -1,4 +1,4 @@
-title: Magnetic - Home 4
+title: Magnetic - Home
 dialog: saas-demo:pages/Home
 $type: siteSpa # See "sites" definitions to see more merged-in configuration.
 
