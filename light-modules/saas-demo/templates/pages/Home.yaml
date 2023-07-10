@@ -7,7 +7,9 @@ dialog: saas-demo:pages/Home
 # # routeTemplate: '/{{@path}}'
 # routeTemplate: '/api/preview?slug=/{{@path}}'
 
-$type: siteSpa
+# $type: siteSpa
+
+class: info.magnolia.site.spa.norsu.rendering.renderer.SiteAwareSpaRenderableDefinition
 
 title: Magnetic - Home
 areas:
