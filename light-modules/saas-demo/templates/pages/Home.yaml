@@ -1,15 +1,14 @@
 # baseUrl: https://magnetic-saas.netlify.app
-# baseUrl: http://localhost:3000
+baseUrl: http://localhost:3000
 
 # class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 dialog: saas-demo:pages/Home
-# renderType: spa
-# # routeTemplate: '/{{@path}}'
-# routeTemplate: '/api/preview?slug=/{{@path}}'
+renderType: spa
+# routeTemplate: '/{{@path}}'
+routeTemplate: '/api/preview?slug=/{{@path}}'
 
 # $type: siteSpa
-
-class: info.magnolia.site.spa.norsu.rendering.renderer.SiteAwareSpaRenderableDefinition
+# class: info.magnolia.site.spa.norsu.rendering.renderer.SiteAwareSpaRenderableDefinition
 
 title: Magnetic - Home
 areas:

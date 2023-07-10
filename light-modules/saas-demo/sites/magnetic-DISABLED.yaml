@@ -9,5 +9,5 @@ templates:
         
 mappings:
     website:
-        handlePrefix: '/magnetic'
+        handlePrefix: '/magnetic-DISABLED'
         repository: ''
