@@ -1,6 +1,6 @@
 templates:
     prototype:
-        baseUrl: http://localhost:3003
+        baseUrl: http://localhost:3004
         # baseUrl: https://magnetic-saas.netlify.app
 
         routeTemplate: '/api/preview?slug=/{{@path}}'
@@ -9,5 +9,5 @@ templates:
         
 mappings:
     website:
-        handlePrefix: '/magnetic'
+        handlePrefix: '/rethink'
         repository: ''
