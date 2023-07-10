@@ -1,9 +1,0 @@
-templates:
-    prototype:
-        baseUrl: http://localhost:3000
-        routeTemplate: '/{language}{{@path}}'
-        $type: spaPrototype
-mappings:
-    website:
-        handlePrefix: '/saas-demo'
-        repository: ''

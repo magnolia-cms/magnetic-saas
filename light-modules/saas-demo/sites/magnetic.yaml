@@ -1,0 +1,13 @@
+templates:
+    prototype:
+        baseUrl: http://localhost:3000
+        # baseUrl: https://magnetic-saas.netlify.app
+
+        routeTemplate: 'SITE/api/preview?slug=/{{@path}}'
+        # routeTemplate: '/{language}{{@path}}'
+        $type: spaPrototype
+        
+mappings:
+    website:
+        handlePrefix: '/magnetic'
+        repository: ''
