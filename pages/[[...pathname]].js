@@ -73,12 +73,16 @@ export async function getStaticProps(context) {
 	const props = {};
 
 	let pageJson;
-
 	const pageUrl = getPageUrl(nodePath);
-
 	const pagesRes = await fetch(pageUrl);
-
 	pageJson = await pagesRes.json();
+
+	let headerJson;
+	const headerUrl = getPageUrl('/magnetic');
+	const headerRes = await fetch(headerUrl);
+	headerJson = await headerRes.json();
+	console.log('headerJson', headerJson);
+	pageJson.header = headerJson.header;
 
 	//Handle that react-editor expects "@id" property for keys.
 	function addIDProperties(obj) {
