@@ -1,0 +1,13 @@
+templates:
+    prototype:
+        # baseUrl: http://localhost:3000
+        baseUrl: https://rethink-saas.netlify.app
+
+        routeTemplate: '/api/preview?slug=/{{@path}}'
+        # routeTemplate: '/{{@path}}'
+        $type: spaPrototype
+        
+mappings:
+    website:
+        handlePrefix: '/rethink'
+        repository: ''
