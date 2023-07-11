@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState } from 'react';
 import { EditableArea, EditableComponent } from '@magnolia/react-editor';
 import A from '../../components/A';
 import Img from '../../components/Img';
@@ -41,12 +41,29 @@ export function renderHomeHeader(props: any) {
 	);
 }
 
-export default function Home(props: any) {
-	const { main, header } = props;
+export const HomeHeader = React.memo(function HomeHeader() {
+	const [header, setHeader] = useState();
 
 	useEffect(() => {
-		sessionStorage.setItem('header', JSON.stringify(header));
-	}, [header]);
+		async function getHeader() {
+			const pages = await fetch(
+				'https://delivery-preview.saas.magnolia-cloud.com/environments/main/delivery/pages/v1/magnetic?subid_token=kka3zes5ed4dnoug'
+			);
+
+			const json = await pages.json();
+			setHeader(json.header);
+		}
+
+		getHeader();
+	}, []);
+
+	return header ? (
+		<EditableArea content={header} customView={renderHomeHeader} />
+	) : null;
+});
+
+export default function Home(props: any) {
+	const { main, header } = props;
 
 	return (
 		<>
