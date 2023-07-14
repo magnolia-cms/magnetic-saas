@@ -75,10 +75,22 @@ export async function getStaticProps(context) {
   // TODO: Ideally nodePath can be from magnoliaContext.nodePath - but that value is not correct.
   //const nodePath = magnoliaContext.searchParams.slug;
   let nodePath = resolvedUrl.split("?")[0];
+  console.log("nodePath:", nodePath);
+
+  console.log("spaRootNodePath:", spaRootNodePath);
+  console.log(
+    "NEXT_PUBLIC_MGNL_APP_BASE: ",
+    process.env.NEXT_PUBLIC_MGNL_APP_BASE
+  );
+  console.log("REACT_APP_CONFIG_ENV: ", process.env.REACT_APP_CONFIG_ENV);
+  console.log("NEXT_APP_CONFIG_ENV: ", process.env.NEXT_APP_CONFIG_ENV);
+
+  console.log("");
 
   if (spaRootNodePath) {
     //nodePath = nodePath.replace(appBase, "");
     if (!nodePath.startsWith(spaRootNodePath)) {
+      console.log("Prefix nodePath with: ", spaRootNodePath);
       nodePath = `${spaRootNodePath}${nodePath}`;
     }
   }
