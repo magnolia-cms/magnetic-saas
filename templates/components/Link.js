@@ -7,11 +7,13 @@ function PageLink(props) {
   const currentLabel = (user && loggedInLabel) || label;
 
   //Handle multisite.
+
   let url = pageLink["@path"];
+  // console.log(`Link.  spaRootNodePath: ${spaRootNodePath}`);
   if (spaRootNodePath) {
     url = url.replace(spaRootNodePath, "");
   }
-  // console.log("link url:" + url);
+  // console.log(`Link.  url:${url}  label: ${label}`);
 
   return currentLabel ? (
     <A

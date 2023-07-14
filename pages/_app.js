@@ -19,8 +19,14 @@ function MyApp({ Component, pageProps }) {
 
   //pageProps can be `page` or `statusCode`.
   if (pageProps.page && pageProps.page["@path"]) {
-    const siteNameEnv = process.env.NEXT_PUBLIC_MGNL_SITE_NAME_2;
+    let siteNameEnv = process.env.NEXT_PUBLIC_MGNL_APP_BASE;
+    console.log("siteNameEnv", siteNameEnv);
+    if (siteNameEnv && siteNameEnv[0] == "/")
+      siteNameEnv = siteNameEnv.slice(1);
+
     siteName = siteNameEnv ?? pageProps.page["@path"].split("/")[1];
+
+    console.log();
     console.log("siteName:", siteName);
   }
   const styleSheetLink = getStyleSheetLink(siteName);
