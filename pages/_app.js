@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }) {
 
     console.log();
     console.log("siteName:", siteName);
+    console.log();
   }
   const styleSheetLink = getStyleSheetLink(siteName);
 
