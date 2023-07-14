@@ -1,0 +1,12 @@
+name: build-on-netlify
+url: https://api.netlify.com/build_hooks/64b16aee30412d2e55828e84
+method: post
+enabled: true
+
+events:
+  - name: pub
+    eventType: Published
+    filter: "@path LIKE '%rethink%'"
+  - name: unpub
+    eventType: Unpublished
+    filter: "@path LIKE '%rethink%'"
