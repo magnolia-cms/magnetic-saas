@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   if (pageProps.page && pageProps.page["@path"]) {
     let siteNameEnv = process.env.NEXT_PUBLIC_MGNL_APP_BASE;
 
-    console.log();
+    console.log("");
 
     if (siteNameEnv && siteNameEnv != "") {
       // console.log("siteNameEnv", siteNameEnv);
@@ -31,9 +31,9 @@ function MyApp({ Component, pageProps }) {
       siteName = pageProps.page["@path"].split("/")[1];
     }
 
-    console.log();
+    console.log("");
     console.log("siteName:", siteName);
-    console.log();
+    console.log("");
   }
   const styleSheetLink = getStyleSheetLink(siteName);
 
