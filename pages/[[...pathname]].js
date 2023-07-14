@@ -105,6 +105,7 @@ export async function getStaticProps(context) {
     const homeRes = await fetch(homeUrl);
     if (homeRes.status == 200) {
       homeJson = await homeRes.json();
+      // console.log("header ", homeJson.header);
       pageJson.header = homeJson.header;
     }
   }
