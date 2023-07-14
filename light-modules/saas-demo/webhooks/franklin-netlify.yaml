@@ -1,0 +1,12 @@
+name: franklin-netlify
+url: https://api.netlify.com/build_hooks/64b16e0a216c562fe14b1ed5
+method: post
+enabled: true
+
+events:
+  - name: pub
+    eventType: Published
+    filter: "@path LIKE '%franklin%'"
+  - name: unpub
+    eventType: Unpublished
+    filter: "@path LIKE '%franklin%'"

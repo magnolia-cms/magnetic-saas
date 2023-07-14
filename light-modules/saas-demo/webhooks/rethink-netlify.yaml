@@ -1,4 +1,4 @@
-name: build-on-netlify
+name: rethink-netlify
 url: https://api.netlify.com/build_hooks/64b16aee30412d2e55828e84
 method: post
 enabled: true
