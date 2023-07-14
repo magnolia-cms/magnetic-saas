@@ -101,7 +101,7 @@ export async function getStaticProps(context) {
 
   if (homeNodePath != nodePath) {
     const homeUrl = getPageUrl(homeNodePath);
-    // console.log("homeUrl", homeUrl);
+    console.log("homeUrl", homeUrl);
     const homeRes = await fetch(homeUrl);
     if (homeRes.status == 200) {
       homeJson = await homeRes.json();
