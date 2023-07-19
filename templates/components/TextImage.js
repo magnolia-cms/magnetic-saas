@@ -2,7 +2,7 @@ import Img from "../../components/Img";
 import CTA from "../../components/CTA";
 
 function renderText(supTitle, title, text, pageLink, webLink, ctaTitle) {
-  return supTitle || title || text || cta ? (
+  return supTitle || title || text ? (
     <div className="col-6 TextImage__text">
       {supTitle && <div className="supTitle">{supTitle}</div>}
       {title && <div className="title">{title}</div>}

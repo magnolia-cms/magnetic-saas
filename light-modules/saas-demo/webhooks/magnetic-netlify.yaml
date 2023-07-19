@@ -1,0 +1,12 @@
+name: magnetic-netlify
+url: https://api.netlify.com/build_hooks/64b16e29d54e93312622fdff
+method: post
+enabled: true
+
+events:
+  - name: pub
+    eventType: Published
+    filter: "@path LIKE '%magnetic%'"
+  - name: unpub
+    eventType: Unpublished
+    filter: "@path LIKE '%magnetic%'"
