@@ -96,15 +96,6 @@ export async function getStaticProps(context) {
 	props.templateAnnotationsUrl = getTemplatesUrl(nodePath);
 
 	let templateAnnotationsJson;
-	/*
-		Only get the template annotatations in page edit mode
-	*/
-	// if (magnoliaContext.isMagnoliaEdit) {
-	// 	const templatesUrl = getTemplatesUrl(nodePath);
-	// 	const templateAnnotationsRes = await fetch(templatesUrl);
-	// 	templateAnnotationsJson = await templateAnnotationsRes.json();
-	// 	props.templateAnnotations = templateAnnotationsJson;
-	// }
 
 	// Required by @magnolia/react-editor
 	global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
