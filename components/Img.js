@@ -1,13 +1,21 @@
-// import { baseUrl } from '../utils/config';
+import Image from 'next/image';
 
 function Img(props) {
 	const { className, image, withCaption } = props;
 	const caption = image?.metadata?.caption || image?.metadata?.fileName;
 
+	console.log(props);
+
 	return (
 		image && (
 			<>
-				<img className={className} src={image['@link']} alt={caption} />
+				<Image
+					className={className}
+					src={image['@link']}
+					alt={caption}
+					width={image?.metadata?.width}
+					height={image?.metadata?.height}
+				/>
 			</>
 		)
 	);
