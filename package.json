@@ -1,6 +1,6 @@
 {
 	"name": "magnetic-saas-website-demo",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"private": true,
 	"scripts": {
 		"get-env": "node get-env.js",
@@ -10,7 +10,8 @@
 		"build": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next build",
 		"build:netlify": "npm run get-env-netlify && CI=false && env-cmd -f .config-env env-cmd -f .env next build",
 		"start": "npm run get-env && env-cmd -f .config-env env-cmd -f .env next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"livesync": "node node_modules/@magnolia/cli @magnolia/livesync"
 	},
 	"dependencies": {
 		"@magnolia/react-editor": "^1.4.0",
@@ -28,7 +29,7 @@
 
 	},
 	"devDependencies": {
-		
+		"@magnolia/cli": "^5.0.1-preview",
 		"env-cmd": "^10.0.1"
 	}
 }
