@@ -1,138 +1,119 @@
 {
-  "@metadata": {
-    "name": "watches",
-    "uuid": "abd58aa2-6693-4da2-b28a-a0455154e777",
-    "path": "/watches"
+  "@metadata" : {
+    "uuid" : "abd58aa2-6693-4da2-b28a-a0455154e777",
+    "name" : "watches",
+    "path" : "/watches"
   },
-  "@content": {},
-  "@nodes": [
-    {
-      "@metadata": {
-        "name": "Rethink",
-        "uuid": "c3c0921f-a9cc-4a42-b01b-9719a5b13da1",
-        "path": null
-      },
-      "@content": {
-        "name": "Rethink",
-        "mgnl:type": "folder"
-      },
-      "@nodes": [
-        {
-          "@metadata": {
-            "name": "Oak",
-            "uuid": "34b4422d-1ed1-41b4-b1ce-bb6ca3bcada7",
-            "path": null
-          },
-          "@content": {
-            "name": "Oak",
-            "image": "saas:e0a498d4-621b-423e-9cd6-0a47b012d490",
-            "price": "289.99",
-            "tagLine": " Living with the trees.",
-            "mgnl:type": "watch",
-            "description": "<p>Introducing Oak, the extraordinary watch crafted from 92% wood, merging nature&#39;s timeless beauty with impeccable craftsmanship. Each Oak timepiece is a unique work of art, showcasing the rich and warm tones of sustainably sourced wood, carefully shaped and polished to perfection.</p>\n\n<p>With its lightweight and eco-friendly design, Oak offers a harmonious blend of style and sustainability. Embrace the natural elegance and unparalleled charm of Oak as it adorns your wrist, reminding you of the enduring beauty found in the world around us.</p>\n",
-            "testimonial": "<p>&quot;Oak is a watch that speaks to my soul. The fact that it&#39;s made mostly from wood gives it a genuine and down-to-earth feel. Whenever I look at my Oak watch, it&#39;s like I&#39;m reconnecting with nature and appreciating its beauty right on my wrist.</p>\n\n<p>It&#39;s a reminder that simplicity and sustainability can be truly remarkable.&quot;</p>\n"
-          },
-          "@nodes": []
-        },
-        {
-          "@metadata": {
-            "name": "Boxtime",
-            "uuid": "821f32ee-9b7b-49e5-aa85-74f23ea7f4c9",
-            "path": null
-          },
-          "@content": {
-            "name": "Boxtime",
-            "image": "saas:085492c6-82da-48e9-9617-b7905640010f",
-            "price": "88.88",
-            "tagLine": "Cardboard boxes turning into watches.",
-            "mgnl:type": "watch",
-            "description": "<p style=\"margin-left:0; margin-right:0\">Introducing Boxtime, the effortlessly cool watch that redefines eco-friendly style.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Made entirely from recycled cardboard, this understated timepiece is a nod to sustainability with a touch of laid-back charm. Its minimalist design and subtle textures make it a versatile accessory for any occasion.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Boxtime is more than a watch; it&#39;s a gentle reminder that even the smallest choices can make a big impact. Embrace the simplicity of recycled materials and make a statement without saying a word.</p>\n",
-            "testimonial": "<p>&quot;Boxtime is like no other watch I&#39;ve owned. Its recycled cardboard construction gives it a unique and down-to-earth vibe that instantly caught my attention. It&#39;s simple yet stylish, and every time I wear it, I feel like I&#39;m making a small contribution to the planet.&quot;</p>\n"
-          },
-          "@nodes": []
-        },
-        {
-          "@metadata": {
-            "name": "Chips",
-            "uuid": "768fc007-8a53-4628-8cbf-6e048182b768",
-            "path": null
-          },
-          "@content": {
-            "name": "Chips",
-            "image": "saas:28fd2145-2e35-414a-ab70-49cf7300c47e",
-            "price": "279.99",
-            "tagLine": "Upcycling e-waste. One wrist at a time.",
-            "mgnl:type": "watch",
-            "description": "<p>Introducing our remarkable watch, meticulously crafted from recycled computer chips and wires. Each watch in this collection is one-of-a-kind, reflecting the beauty of its unique materials.</p>\n\n<p>Experience the quiet elegance of recycled technology and carry a piece of innovation on your wrist that tells a tale of transformation and conscious choices.</p>\n",
-            "testimonial": "<p>&nbsp;</p>\n\n<p>&quot;I absolutely love the watch made from recycled computer chips and wires! It&#39;s so cool to know that it&#39;s not just a regular watch, but something special that helps the environment.</p>\n\n<p>Plus, it looks really cool with all the circuits and wires. It&#39;s my favorite accessory!&quot;</p>\n"
-          },
-          "@nodes": []
-        }
-      ]
+  "@content" : { },
+  "@nodes" : [ {
+    "@metadata" : {
+      "uuid" : "c3c0921f-a9cc-4a42-b01b-9719a5b13da1",
+      "name" : "Rethink"
     },
-    {
-      "@metadata": {
-        "name": "Franklin-Clockworks",
-        "uuid": "f5e2bd34-c257-4b23-b2a0-d86d9da8f6c1",
-        "path": null
+    "@content" : {
+      "name" : "Rethink",
+      "mgnl:type" : "folder"
+    },
+    "@nodes" : [ {
+      "@metadata" : {
+        "uuid" : "34b4422d-1ed1-41b4-b1ce-bb6ca3bcada7",
+        "name" : "Oak"
       },
-      "@content": {
-        "name": "Franklin Clockworks",
-        "mgnl:type": "folder"
+      "@content" : {
+        "name" : "Oak",
+        "image" : "saas:e0a498d4-621b-423e-9cd6-0a47b012d490",
+        "price" : "289.99",
+        "tagLine" : " Living with the trees.",
+        "mgnl:type" : "watch",
+        "description" : "<p>Introducing Oak, the extraordinary watch crafted from 92% wood, merging nature&#39;s timeless beauty with impeccable craftsmanship. Each Oak timepiece is a unique work of art, showcasing the rich and warm tones of sustainably sourced wood, carefully shaped and polished to perfection.</p>\n\n<p>With its lightweight and eco-friendly design, Oak offers a harmonious blend of style and sustainability. Embrace the natural elegance and unparalleled charm of Oak as it adorns your wrist, reminding you of the enduring beauty found in the world around us.</p>\n",
+        "testimonial" : "<p>&quot;Oak is a watch that speaks to my soul. The fact that it&#39;s made mostly from wood gives it a genuine and down-to-earth feel. Whenever I look at my Oak watch, it&#39;s like I&#39;m reconnecting with nature and appreciating its beauty right on my wrist.</p>\n\n<p>It&#39;s a reminder that simplicity and sustainability can be truly remarkable.&quot;</p>\n"
       },
-      "@nodes": [
-        {
-          "@metadata": {
-            "name": "Boilerroom",
-            "uuid": "fd7212cb-6756-4144-a840-7f697be2e4e5",
-            "path": null
-          },
-          "@content": {
-            "name": "Boilerroom",
-            "image": "saas:7cb53af8-c431-4cb0-86ff-77f8d2d41e47",
-            "price": "629.99",
-            "tagLine": "Keep your engine running.",
-            "mgnl:type": "watch",
-            "description": "<p style=\"margin-left:0; margin-right:0\">Introducing Boilerroom, the rugged timepiece that defies convention and adds a touch of adventure to your wrist. This extraordinary watch takes inspiration from industrial steam-powered machinery.</p>\n\n<p style=\"margin-left:0; margin-right:0\">But what sets Boilerroom apart is its unique steam release mechanism. When the temperature rises, a concealed vent releases a controlled burst of steam, creating a visual spectacle that&#39;s both captivating and functional. This ingenious feature serves as a practical indicator of your activity level.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Boilerroom is the ultimate embodiment of strength and versatility. Embrace the power of steam, and let your wrist become a testament to your fearless spirit.</p>\n",
-            "testimonial": "<p>&quot;The Boilerroom watch is the perfect accessory for a night in the city. Its rugged design and steam release feature add an element of edgy flair to my clubbing attire. As the night heats up on the dance floor, the bursts of steam emanating from my wrist make me feel like I&#39;m in a performance.</p>\n\n<p>It&#39;s a conversation starter and a symbol of my nightlife persona.&quot;</p>\n"
-          },
-          "@nodes": []
-        },
-        {
-          "@metadata": {
-            "name": "Trifecta",
-            "uuid": "c358ca8a-9972-4636-8282-6f0a14751e93",
-            "path": null
-          },
-          "@content": {
-            "name": "Trifecta",
-            "image": "saas:3be7abc8-f08d-42ad-bfa0-16718686d133",
-            "price": "399.99",
-            "tagLine": "Track the most important values in life.",
-            "mgnl:type": "watch",
-            "description": "<p>Step into the world of Victorian futurism with Trifecta, the remarkable steampunk watch that effortlessly blends old-world charm with contemporary ingenuity. With its mesmerizing triad of meticulously crafted dials, Trifecta takes timekeeping to new heights, allowing you to effortlessly track multiple time zones or indulge in the beauty of intricate mechanical movements.</p>\n\n<p>Each dial tells a story of its own, featuring ornate gears, delicate engravings, and captivating details that transport you to a bygone era of invention and adventure.</p>\n\n<p>With its impeccable craftsmanship and timeless style, Trifecta is not just a watch; it&#39;s a statement piece that embraces the spirit of exploration and pays homage to the artistry of yesteryears.</p>\n",
-            "testimonial": "<p>&quot;As a professor of horology and a connoisseur of timepieces, I am truly captivated by the Trifecta steampunk watch. Its intricate design and three dials not only showcase the artistry of the past but also offer a practicality that exceeds expectations.</p>\n\n<p>The craftsmanship and attention to detail are impeccable, making it a true masterpiece on my wrist.&quot;</p>\n"
-          },
-          "@nodes": []
-        },
-        {
-          "@metadata": {
-            "name": "Brassheart",
-            "uuid": "a8890c42-634e-4805-80a0-4fa95dc95aaa",
-            "path": null
-          },
-          "@content": {
-            "name": "Brassheart",
-            "image": "saas:2177025c-170c-472f-9c13-bf09c17b0709",
-            "price": "459.99",
-            "tagLine": "Wear your heart on your wrist.",
-            "mgnl:type": "watch",
-            "description": "<p>Introducing Brassheart, the magnificent wristwatch that embodies the allure of a bygone era.</p>\n\n<p>With its large antique-inspired design, this timepiece exudes timeless elegance and sophistication. Crafted with meticulous attention to detail, Brassheart showcases a stunning brass casing that ages gracefully, creating a rich patina over time. The intricate engravings and ornate detailing on the dial add a touch of vintage charm, while the oversized face allows for easy legibility and a bold statement on your wrist.</p>\n\n<p>Whether you&#39;re a seasoned collector or simply appreciate the allure of classic timepieces, Brassheart is sure to captivate with its blend of old-world aesthetics and modern reliability. Experience the beauty and craftsmanship of an era long past with the remarkable Brassheart wristwatch.</p>\n",
-            "testimonial": "<p>&quot;The Brassheart watch is a melancholic masterpiece that resonates deeply with my dark and brooding soul.</p>\n\n<p>Its large, antique design and brass casing evoke a sense of mystery and elegance, perfectly complementing my gothic style. The intricate engravings and vintage-inspired dial transport me to a world of romantic melancholy.</p>\n\n<p>As I wear it, I feel a connection to the past, as if I&#39;m carrying a piece of history with me. It&#39;s a somber reminder of the fleeting nature of time, and yet, it brings a touch of beauty to my sorrow.</p>\n\n<p>The Brassheart watch is more than just a timepiece; it&#39;s a symbol of my innermost emotions&quot;</p>\n"
-          },
-          "@nodes": []
-        }
-      ]
-    }
-  ]
+      "@nodes" : [ ]
+    }, {
+      "@metadata" : {
+        "uuid" : "821f32ee-9b7b-49e5-aa85-74f23ea7f4c9",
+        "name" : "Boxtime"
+      },
+      "@content" : {
+        "name" : "Boxtime",
+        "image" : "saas:085492c6-82da-48e9-9617-b7905640010f",
+        "price" : "88.88",
+        "tagLine" : "Cardboard boxes turning into watches.",
+        "mgnl:type" : "watch",
+        "description" : "<p style=\"margin-left:0; margin-right:0\">Introducing Boxtime, the effortlessly cool watch that redefines eco-friendly style.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Made entirely from recycled cardboard, this understated timepiece is a nod to sustainability with a touch of laid-back charm. Its minimalist design and subtle textures make it a versatile accessory for any occasion.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Boxtime is more than a watch; it&#39;s a gentle reminder that even the smallest choices can make a big impact. Embrace the simplicity of recycled materials and make a statement without saying a word.</p>\n",
+        "testimonial" : "<p>&quot;Boxtime is like no other watch I&#39;ve owned. Its recycled cardboard construction gives it a unique and down-to-earth vibe that instantly caught my attention. It&#39;s simple yet stylish, and every time I wear it, I feel like I&#39;m making a small contribution to the planet.&quot;</p>\n"
+      },
+      "@nodes" : [ ]
+    }, {
+      "@metadata" : {
+        "uuid" : "768fc007-8a53-4628-8cbf-6e048182b768",
+        "name" : "Chips"
+      },
+      "@content" : {
+        "name" : "Chips",
+        "image" : "saas:28fd2145-2e35-414a-ab70-49cf7300c47e",
+        "price" : "279.99",
+        "tagLine" : "Upcycling e-waste. One wrist at a time.",
+        "mgnl:type" : "watch",
+        "description" : "<p>Introducing our remarkable watch, meticulously crafted from recycled computer chips and wires. Each watch in this collection is one-of-a-kind, reflecting the beauty of its unique materials.</p>\n\n<p>Experience the quiet elegance of recycled technology and carry a piece of innovation on your wrist that tells a tale of transformation and conscious choices.</p>\n",
+        "testimonial" : "<p>&nbsp;</p>\n\n<p>&quot;I absolutely love the watch made from recycled computer chips and wires! It&#39;s so cool to know that it&#39;s not just a regular watch, but something special that helps the environment.</p>\n\n<p>Plus, it looks really cool with all the circuits and wires. It&#39;s my favorite accessory!&quot;</p>\n"
+      },
+      "@nodes" : [ ]
+    } ]
+  }, {
+    "@metadata" : {
+      "uuid" : "f5e2bd34-c257-4b23-b2a0-d86d9da8f6c1",
+      "name" : "Franklin-Clockworks"
+    },
+    "@content" : {
+      "name" : "Franklin Clockworks",
+      "mgnl:type" : "folder"
+    },
+    "@nodes" : [ {
+      "@metadata" : {
+        "uuid" : "fd7212cb-6756-4144-a840-7f697be2e4e5",
+        "name" : "Boilerroom"
+      },
+      "@content" : {
+        "name" : "Boilerroom",
+        "image" : "saas:7cb53af8-c431-4cb0-86ff-77f8d2d41e47",
+        "price" : "629.99",
+        "tagLine" : "Keep your engine running.",
+        "mgnl:type" : "watch",
+        "description" : "<p style=\"margin-left:0; margin-right:0\">Introducing Boilerroom, the rugged timepiece that defies convention and adds a touch of adventure to your wrist. This extraordinary watch takes inspiration from industrial steam-powered machinery.</p>\n\n<p style=\"margin-left:0; margin-right:0\">But what sets Boilerroom apart is its unique steam release mechanism. When the temperature rises, a concealed vent releases a controlled burst of steam, creating a visual spectacle that&#39;s both captivating and functional. This ingenious feature serves as a practical indicator of your activity level.</p>\n\n<p style=\"margin-left:0; margin-right:0\">Boilerroom is the ultimate embodiment of strength and versatility. Embrace the power of steam, and let your wrist become a testament to your fearless spirit.</p>\n",
+        "testimonial" : "<p>&quot;The Boilerroom watch is the perfect accessory for a night in the city. Its rugged design and steam release feature add an element of edgy flair to my clubbing attire. As the night heats up on the dance floor, the bursts of steam emanating from my wrist make me feel like I&#39;m in a performance.</p>\n\n<p>It&#39;s a conversation starter and a symbol of my nightlife persona.&quot;</p>\n"
+      },
+      "@nodes" : [ ]
+    }, {
+      "@metadata" : {
+        "uuid" : "c358ca8a-9972-4636-8282-6f0a14751e93",
+        "name" : "Trifecta"
+      },
+      "@content" : {
+        "name" : "Trifecta",
+        "image" : "saas:3be7abc8-f08d-42ad-bfa0-16718686d133",
+        "price" : "399.99",
+        "tagLine" : "Track the most important values in life.",
+        "mgnl:type" : "watch",
+        "description" : "<p>Step into the world of Victorian futurism with Trifecta, the remarkable steampunk watch that effortlessly blends old-world charm with contemporary ingenuity. With its mesmerizing triad of meticulously crafted dials, Trifecta takes timekeeping to new heights, allowing you to effortlessly track multiple time zones or indulge in the beauty of intricate mechanical movements.</p>\n\n<p>Each dial tells a story of its own, featuring ornate gears, delicate engravings, and captivating details that transport you to a bygone era of invention and adventure.</p>\n\n<p>With its impeccable craftsmanship and timeless style, Trifecta is not just a watch; it&#39;s a statement piece that embraces the spirit of exploration and pays homage to the artistry of yesteryears.</p>\n",
+        "testimonial" : "<p>&quot;As a professor of horology and a connoisseur of timepieces, I am truly captivated by the Trifecta steampunk watch. Its intricate design and three dials not only showcase the artistry of the past but also offer a practicality that exceeds expectations.</p>\n\n<p>The craftsmanship and attention to detail are impeccable, making it a true masterpiece on my wrist.&quot;</p>\n"
+      },
+      "@nodes" : [ ]
+    }, {
+      "@metadata" : {
+        "uuid" : "a8890c42-634e-4805-80a0-4fa95dc95aaa",
+        "name" : "Brassheart"
+      },
+      "@content" : {
+        "name" : "Brassheart",
+        "image" : "saas:2177025c-170c-472f-9c13-bf09c17b0709",
+        "price" : "459.99",
+        "tagLine" : "Wear your heart on your wrist.",
+        "mgnl:type" : "watch",
+        "description" : "<p>Introducing Brassheart, the magnificent wristwatch that embodies the allure of a bygone era.</p>\n\n<p>With its large antique-inspired design, this timepiece exudes timeless elegance and sophistication. Crafted with meticulous attention to detail, Brassheart showcases a stunning brass casing that ages gracefully, creating a rich patina over time. The intricate engravings and ornate detailing on the dial add a touch of vintage charm, while the oversized face allows for easy legibility and a bold statement on your wrist.</p>\n\n<p>Whether you&#39;re a seasoned collector or simply appreciate the allure of classic timepieces, Brassheart is sure to captivate with its blend of old-world aesthetics and modern reliability. Experience the beauty and craftsmanship of an era long past with the remarkable Brassheart wristwatch.</p>\n",
+        "testimonial" : "<p>&quot;The Brassheart watch is a melancholic masterpiece that resonates deeply with my dark and brooding soul.</p>\n\n<p>Its large, antique design and brass casing evoke a sense of mystery and elegance, perfectly complementing my gothic style. The intricate engravings and vintage-inspired dial transport me to a world of romantic melancholy.</p>\n\n<p>As I wear it, I feel a connection to the past, as if I&#39;m carrying a piece of history with me. It&#39;s a somber reminder of the fleeting nature of time, and yet, it brings a touch of beauty to my sorrow.</p>\n\n<p>The Brassheart watch is more than just a timepiece; it&#39;s a symbol of my innermost emotions&quot;</p>\n"
+      },
+      "@nodes" : [ ]
+    } ]
+  } ]
 }
