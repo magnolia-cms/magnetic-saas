@@ -2,7 +2,7 @@ label: Section
 form:
     properties:
         supTitle:
-            label: Subtitle
+            label: Sub-title
             $type: textField
             i18n: true
         title:
