@@ -15,7 +15,7 @@ function Section(props) {
 			<div className={rowClassName}>
 				<div className="col-12">
 					<div className="text-center">
-						{supTitle && <div className="supTitle">Hey there{supTitle}</div>}
+						{supTitle && <div className="supTitle">{supTitle}</div>}
 						{title && <div className="title">{title}</div>}
 						{text && <div className="text">{text}</div>}
 					</div>
