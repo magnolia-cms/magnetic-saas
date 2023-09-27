@@ -2,7 +2,7 @@ label: Header
 form:
     properties:
         image:
-            label: Logo
+            label: Logo or Image
             $type: damLinkField
         pageLink:
             label: Page Link
