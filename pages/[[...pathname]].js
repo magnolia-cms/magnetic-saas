@@ -16,8 +16,11 @@ export async function getStaticPaths() {
   let paths = [];
 
   const navAPI = pagesNavApi();
+  // console.log("navAPI:", navAPI);
   const res = await magnoliaFetch(navAPI);
+  // console.log("res:", res);
   const pages = await res.json();
+  // console.log("pages:", res);
 
   paths = pages.results.map((page) => {
     let path = page["@metadata"]["@path"];
@@ -75,6 +78,8 @@ export async function getStaticProps(context) {
   const pageUrl = getPageUrl(nodePath);
   const pagesRes = await magnoliaFetch(pageUrl);
   pageJson = await pagesRes.json();
+
+  console.log("PAGEJSON:" + JSON.stringify(pageJson, null, 2));
 
   // Get header from home page. (If not on homepage ;) )
 

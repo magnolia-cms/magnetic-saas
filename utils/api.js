@@ -28,6 +28,8 @@ const getTemplatesUrl = (nodePath) => {
 async function magnoliaFetch(url) {
   const liveSyncSessionId = process.env.NEXT_PUBLIC_MGNL_LIVE_SYNC_SESSION_ID;
 
+  // console.log("magnoliaFetch. Fetching ", url);
+
   // console.log(
   //   "magnoliaFetch. Fetching ",
   //   url,
@@ -46,6 +48,27 @@ async function magnoliaFetch(url) {
   return response;
 }
 
+const fetchWatch = async (name) => {
+  console.log("fetchWatch path:" + name);
+  const endpoint = baseUrl + `/delivery/watches/v1/${name}`;
+  console.log("fetchWatch endpoint:" + endpoint);
+  const response = await magnoliaFetch(endpoint);
+  const json = await response.json();
+  return json;
+};
+
+const fetchWatches = async () => {
+  console.log("fetchWatches");
+  var endpoint = baseUrl + `/delivery/watches/v1/?mgnl:type[eq]=watch`;
+  console.log("fetchWatch endpoint:" + endpoint);
+  endpoint = encodeURI(endpoint);
+  console.log("fetchWatch endpoint:" + endpoint);
+  const response = await magnoliaFetch(endpoint);
+  const json = await response.json();
+  console.log("****** json:" + JSON.stringify(json, null, 2));
+  return json.results;
+};
+
 export {
   baseUrl,
   spaRootNodePath,
@@ -55,4 +78,6 @@ export {
   getPageUrl,
   getTemplatesUrl,
   magnoliaFetch,
+  fetchWatch,
+  fetchWatches,
 };

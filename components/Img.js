@@ -1,24 +1,24 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 function Img(props) {
-	const { className, image, withCaption } = props;
-	const caption = image?.metadata?.caption || image?.metadata?.fileName;
+  const { className, image, withCaption } = props;
+  const caption = image?.metadata?.caption || image?.metadata?.fileName;
 
-	console.log(props);
+  // console.log("IMAAGE:", props);
 
-	return (
-		image && (
-			<>
-				<Image
-					className={className}
-					src={image['@link']}
-					alt={caption}
-					width={image?.metadata?.width}
-					height={image?.metadata?.height}
-				/>
-			</>
-		)
-	);
+  return (
+    image && (
+      <>
+        <Image
+          className={className}
+          src={image["@link"]}
+          alt={caption}
+          width={image?.metadata?.width}
+          height={image?.metadata?.height}
+        />
+      </>
+    )
+  );
 }
 
 export default Img;

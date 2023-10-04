@@ -9,13 +9,14 @@ function getStyleSheetLink(siteName) {
   //   if (siteName==="a"){
   // 	cssLink = "/test.css";
   //   }=
-  console.log("getStyleSheetLink", cssLink);
+  // console.log("getStyleSheetLink", cssLink);
   return cssLink;
 }
 
 function MyApp({ Component, pageProps }) {
   // console.log("MyApp pageProps:", pageProps);
-  let siteName = "";
+  let siteName = process.env.NEXT_PUBLIC_MGNL_APP_BASE;
+  if (siteName[0] == "/") siteName = siteName.slice(1);
 
   //pageProps can be `page` or `statusCode`.
   if (pageProps.page && pageProps.page["@path"]) {
