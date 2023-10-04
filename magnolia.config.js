@@ -1,5 +1,7 @@
 import Home from "./templates/pages/Home";
 import Basic from "./templates/pages/Basic";
+import BasicHeader from "./templates/pages/BasicHeader";
+
 import Section from "./templates/components/Section";
 import Carousel from "./templates/components/Carousel";
 import Banner from "./templates/components/Banner";
@@ -16,6 +18,7 @@ export const config = {
   componentMappings: {
     "saas-demo:pages/Home": Home,
     "saas-demo:pages/Basic": Basic,
+    "saas-demo:pages/BasicHeader": BasicHeader,
 
     "saas-demo:components/Section": Section,
     "saas-demo:components/Carousel": Carousel,

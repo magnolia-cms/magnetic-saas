@@ -322,7 +322,7 @@ main {
 
 .PageLink:hover {
 	color: #d9d9d9;
-	border-bottom: 4px solid;
+	/* border-bottom: 4px solid; */
 	border-color: var(--hover-font-color);
 }
 
@@ -354,6 +354,7 @@ main {
 /* Section */
 .Section {
 	margin-bottom: 2rem;
+	background-color: #eee;
 }
 
 .Section:last-of-type {
@@ -470,6 +471,17 @@ main {
 
 /* Card */
 
+.Card-fixed{
+	width: 30rem;
+	display:inline-block;
+	margin: 1rem;
+	vertical-align: top;
+}
+.Card-fixed  .supTitle {
+	font-size: 2rem;
+}
+
+
 .Card-wrapper {
 	height: 100%;
 	color: #000;
@@ -512,11 +524,18 @@ main {
 }
 
 .Card [class*='btn'] {
+	
+
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* .Card [class*='btn'] {
 	position: absolute;
 	bottom: 2rem;
 	left: 50%;
 	transform: translateX(-50%);
-}
+} */
 
 .Card.transparent {
 	background: transparent;
