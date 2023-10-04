@@ -29,6 +29,15 @@ const getTemplatesUrl = (nodePath) => {
 async function magnoliaFetch(url) {
   const liveSyncSessionId = process.env.NEXT_PUBLIC_MGNL_LIVE_SYNC_SESSION_ID;
 
+  // console.log("magnoliaFetch. Fetching ", url);
+
+  // console.log(
+  //   "magnoliaFetch. Fetching ",
+  //   url,
+  //   " with livesync session id:",
+  //   liveSyncSessionId
+  // );
+
   const headers = new Headers();
   if (liveSyncSessionId && liveSyncSessionId.trim() !== "") {
     headers.append("live-sync-session-id", liveSyncSessionId);
