@@ -8,10 +8,10 @@
   "@nodes" : [ {
     "@metadata" : {
       "uuid" : "c3c0921f-a9cc-4a42-b01b-9719a5b13da1",
-      "name" : "Rethink"
+      "name" : "rethink"
     },
     "@content" : {
-      "name" : "Rethink",
+      "name" : "rethink",
       "mgnl:type" : "folder"
     },
     "@nodes" : [ {
@@ -63,10 +63,10 @@
   }, {
     "@metadata" : {
       "uuid" : "f5e2bd34-c257-4b23-b2a0-d86d9da8f6c1",
-      "name" : "Franklin-Clockworks"
+      "name" : "franklin"
     },
     "@content" : {
-      "name" : "Franklin Clockworks",
+      "name" : "franklin",
       "mgnl:type" : "folder"
     },
     "@nodes" : [ {

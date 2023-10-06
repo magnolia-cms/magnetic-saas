@@ -122,3 +122,12 @@ The project uses Next.js “Preview mode” to render a dynamic “on the fly”
 Because it is a static site, the site must be rebuilt when content is changed. This is done via a Magnolia webhook whenever content is published.
 
 See the `light-modules/saas-demo/webhooks` directory.
+
+## Product Pages - Using Content-Types Only
+
+There are two routes which demonstrate consuming content from the Content-Type-Based-App "Watches", without using the Pages App at all.
+
+- *Product List*: /ct-only Displays all of the watches under the root folder with the name stored in `NEXT_PUBLIC_MGNL_APP_BASE` (Typically  /rethink, or /franklin)
+- *Product Detail*: /watches/[Path of watch] ie : http://localhost:3000/watches/Trifecta
+
+Note: To be clear - this feature depends on the name of the root folder in the `Watches` app to match the configured environment variable.
