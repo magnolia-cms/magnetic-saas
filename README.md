@@ -10,17 +10,17 @@ It is also a reference implementation to show implementors how to build and achi
 
 ## Use cases
 
-Use cases demonstrated in Magnetic:
+Magnolia customer use cases demonstrated in Magnetic:
 
 - Corporate website
 - Lead generating website
 - Multiple brand websites with some shared content and shared components
-- Simple product catalog  (In development)
+- Simple product catalog  
 - Blog / Articles (In development)
 
 ## The Magnetic Scenario
 
-The scenario and all content is fiction. The imaginary Magnetic Group is a holding company/consolidator for watch brands. Similar to the model of Emmi [https://group.emmi.com/](https://group.emmi.com/che/de)
+The scenario and all content is fiction. The imaginary Magnetic Group is a holding company/consolidator for watch brands. 
 
 Magnetic has several lines of watches serving various customer types.
 
@@ -36,10 +36,9 @@ The demo has three websites:
 
 - Visual Page Editing - for home page and other landing pages.
     - Component library for corporate sites.
-- Content app - Structured content for products.
-- Multiple sites - Each using the same frontend code and components but having a unique style.
-- Dynamic navigation - per site.
-- Content-app generated pages. (In development)
+- Content app - Structured content for products. (Rendered as product list & product pages)
+- Multiple sites - Each using the same frontend code and components, and some content, but having a unique style.
+- Authorable navigation - per site.
 - SEO (In development)
 
 ### Technical
